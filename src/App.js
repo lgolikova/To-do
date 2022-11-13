@@ -10,12 +10,13 @@ import todosData from './components/tododata';
 function App() {
 
   return (
-
-    todosData.map(item => < ToDoItem text = {
+    <div className='todo-list'>
+    {todosData.map(item => < ToDoItem text = {
         item.text
       }
       />
-    )
+    )}
+    </div>
   );
 }
 
