@@ -3,21 +3,19 @@ import Footer from './components/footer';
 import Header from './components/header';
 import Main from './components/main';
 import ToDoItem from './components/todoitem';
+import todosData from './components/tododata';
 
 
 
 function App() {
+
   return (
-    <div>
-      {/* <Header /> */}
-      <div className='todo-list'>
-      <ToDoItem />
-      <ToDoItem />
-      <ToDoItem />
-      <ToDoItem />
-      </div>
-      {/* <Footer /> */}
-    </div>
+
+    todosData.map(item => < ToDoItem text = {
+        item.text
+      }
+      />
+    )
   );
 }
 

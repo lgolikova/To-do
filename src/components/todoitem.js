@@ -1,12 +1,12 @@
 import React from 'react';
 
-function ToDoItem() {
-        
+function ToDoItem(props) {
+
     return ( 
-        <div className='todo-item'>
-            <input type="checkbox" />
-            <p>Placeholder text here</p>
-        </div>
+        <div className = 'todo-item' >
+        <input type = "checkbox" />
+        <p> {props.text} </p> 
+        </div >
     );
 }
 
